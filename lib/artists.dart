@@ -36,12 +36,12 @@ class _ArtistsState extends State<ArtistsPage> {
         );
     }
 
-    // artist
     Widget _artists(String artistImg, String artistName) {
         return GestureDetector(
             onTap: (){
                 Navigator.push(context, 
-                MaterialPageRoute(builder: (context) => ArtistDetail()));
+                    MaterialPageRoute(builder: (context) => ArtistDetail())
+                );
             },
             child: Column(
                 children: <Widget>[
@@ -55,7 +55,9 @@ class _ArtistsState extends State<ArtistsPage> {
                                 image: AssetImage(artistImg))
                         ),
                     ),
+                    
                     SizedBox(height: 10.0),
+
                     Text(artistName, style: TextStyle(
                         fontFamily: 'Varela',
                         fontSize: 2.3 * SizeConfig.textMultiplier,
