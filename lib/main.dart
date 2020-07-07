@@ -75,13 +75,8 @@ class _AppHomePage extends State<AppHomePage> with SingleTickerProviderStateMixi
 
                     Padding(
                         padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
-                        // padding: const EdgeInsets.only(left: 20.0, right: 20.0, top: 50.0),
                         child: Row(
                             children: <Widget>[
-                                // Icon(Icons.search, color: Colors.black,),
-								// Spacer(),
-                                // Icon(Icons.more_vert, color: Colors.black,),
-
 								Flexible(
 									child: TextField(
                                         cursorColor: Colors.black12,
@@ -153,4 +148,3 @@ class _AppHomePage extends State<AppHomePage> with SingleTickerProviderStateMixi
         );
     }
 }
-
